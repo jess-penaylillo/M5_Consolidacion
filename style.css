@@ -1,0 +1,140 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e0e0e !important; 
+    color: #000000;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Estilos del menú lateral */
+.sidebar {
+    width: 25%;
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #333;
+    color: #ffcc00;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.sidebar li:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+/* Estilos del área de contenido */
+.content {
+    width: 75%;
+    padding: 20px;
+    overflow-y: auto;
+    color: #ffcc00;
+}
+
+/* Estilos para el contenedor de personajes */
+.character-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilos de las tarjetas de personajes */
+.card {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Estilos básicos del footer */
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+}
+
+footer:hover {
+    background-color: #333;
+    /* Cambia ligeramente el fondo al pasar el cursor */
+}
+
+/* Estilos para los enlaces en el footer */
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #fff;
+    /* Cambia el color del enlace al pasar el cursor */
+}
+footer p{
+    font-size: large;
+}
+
+
+
+.custom-margin {
+    margin-top: -30px; /* Ajusta el valor según necesites */
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes de Star Wars</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="container-fluid text-center pt-4 pb-4">
+        <h1 class="text-light">🛸 Star Wars 🛸</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Rangos</h2>
+            <!-- Lista de rangos para seleccionar personajes -->
+            <ul>
+                <li data-range="1-5">1 - 5
+                    <p> <strong>En esta sección</strong> Encontrarás información sobre los personajes mas populares de
+                        la franquicia.</p>
+                </li>
+                <li data-range="6-11">6 - 11
+                    <p> <strong>En esta sección</strong> Encontrarás información sobre los personajes secundarios importantes.</p>
+                </li>
+                <li data-range="12-17">12 - 17
+                    <p> <strong>En esta sección</strong> Encontrarás información sobre otros personajes sifinicativos.</p>
+                </li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2 class="text-center custom-margin">Datos reales de los personajes de Star Wars</h2>
+            <!-- Contenedor donde se mostrarán los personajes -->
+            <div id="character-info" class="character-info"></div>
+        </main>
+    </div>
+
+
+    <footer>
+        <p>Creado por <a href="https://github.com/" target="_blank">Jess Peña y Lillo Dev</a></p>
+        <p>Basado en la API de Star Wars <a href="https://swapi.dev/" target="_blank">SWAPI</a></p>
+        <p>Versión 1.0.0 - Todos los derechos reservados</p>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
